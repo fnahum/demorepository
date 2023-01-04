@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Add log') {
       steps {
         git(url: 'https://github.com/fnahum/demorepository', branch: 'dev')
       }
