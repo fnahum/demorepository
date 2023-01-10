@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh 'cd curriculum-front && npm i && npm run'
+      }
+    }
+
   }
 }
